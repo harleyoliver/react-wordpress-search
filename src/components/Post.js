@@ -10,7 +10,7 @@ class Post extends React.Component {
 				<Link to={`/post/${id}/${slug}`}>
 					<h2 dangerouslySetInnerHTML={ { __html: title.rendered } }></h2>
 				</Link>
-				<p dangerouslySetInnerHTML={ { __html: excerpt.rendered } }></p>
+				<div dangerouslySetInnerHTML={ { __html: excerpt.rendered } }></div>
 				<Link to={`/post/${id}/${slug}`}>
 					<strong className="btn">Read More ></strong>
 				</Link>

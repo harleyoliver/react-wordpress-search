@@ -39,7 +39,7 @@ class Single extends React.Component {
 				<div className="desc">
 					<h2 dangerouslySetInnerHTML={ { __html: post.title.rendered } }></h2>
 				</div>
-				<p dangerouslySetInnerHTML={ { __html: post.content.rendered } }></p>
+				<div dangerouslySetInnerHTML={ { __html: post.content.rendered } }></div>
 			</div>
 		)
 	}
