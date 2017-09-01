@@ -25,7 +25,7 @@ class Main extends React.Component {
 
 	loadPosts = (searchTerm = 'Harley') => {
 
-		fetch(`https://goop.com.au/wp-json/wp/v2/posts?per_page=50&search=${searchTerm}`)
+		fetch(`https://www.goop.com.au/wp-json/wp/v2/posts?per_page=50&search=${searchTerm}`)
 			.then(data => data.json())
 			.then(posts => {
 				console.log(posts);
